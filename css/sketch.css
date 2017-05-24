@@ -1,0 +1,17 @@
+#container{
+  width:600px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.grid{
+  width:60px;
+  height: 60px;
+  border-style:solid;
+  border-color: #666;
+  float:left;
+}
+
+.squares{
+  background-color: #000000;
+}
