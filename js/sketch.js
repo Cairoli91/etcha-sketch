@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  var grid = 4;
+  var grid = 16;
   makeGrid(grid);
   makeSquares(grid);
 });
@@ -10,14 +10,23 @@ function makeGrid(grid){
   $("#container").append('<div class="grid"></div>');
 }
 
-function makeSquares(){
-  
-}
+function makeSquares(grid){
+ var  square=475/(grid*1.1);
+  $('.grid').css({
+  "width":square+"px",
+  "height":square+"px",
+  "border-width":square*0.05+"px",
+  })
+  $('.grid').on('mouseenter',function(){
+    $(this).addClass('squares');
+  });
+};
 
-$(".grid ").on('mouseenter', function(){
-  $(this).addclass('squares');
-});
 
-function clearGrid(){
 
-}
+function gridClear(){
+  $('.grid').remove();
+  var grid = +prompt("How many squares per side would you like the grid?", 16);
+  makeGrid(grid);
+  makeSquares(grid);
+};

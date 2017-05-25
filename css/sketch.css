@@ -1,17 +1,41 @@
+body{
+  background-color: #f0f0f0;
+}
+#wrapper{
+  width:640px;
+  margin:0 auto;
+  position: relative;
+
+}
+
 #container{
-  width:600px;
-  height: 600px;
-  margin: 0 auto;
+  width:475px;
+  height: 475px;
+  margin: 50px auto;
+  overflow:hidden;
 }
 
 .grid{
   width:60px;
   height: 60px;
   border-style:solid;
-  border-color: #666;
+  border-color: #000000;
   float:left;
 }
 
 .squares{
+  background-color: #237a00;
+}
+
+button{
+  position: relative;
+  width:120px;
+  height:40px;
+  margin:0 auto;
+  left:250px;
+  top:25px;
+  border-radius: 4px;
+  font-size: 15px;
   background-color: #000000;
+  color: #237a00;
 }
